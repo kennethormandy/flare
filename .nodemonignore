@@ -1,6 +1,0 @@
-/public/*
-./README.md
-*.jade
-*.styl
-client.coffee
-client/*.coffee

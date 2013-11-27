@@ -1,0 +1,51 @@
+@import 'mixins'
+
+#content
+  margin-top: 1000px
+  margin-bottom: 1000px
+  position: relative
+  z-index: 10
+  background: white
+
+section
+  background: white
+  position: relative
+  min-height: 1000px
+  overflow: hidden
+  max-width: 1620px
+  margin: 0px auto
+
+  .text-container
+    max-width: 600px
+    min-width: 250px
+    width: 30%
+    z-index: 6
+    display: inline-block
+    vertical-align: top
+    @media media-query
+      display: none
+
+  .heading, p
+    padding-left: 60px
+    padding-right: 60px
+
+  .heading
+    font-size: 47px
+    line-height: 102%
+    margin-bottom: 25px
+
+  p
+    font-size: 17px
+    line-height: 143%
+    color: #333
+    max-width: 350px
+
+  .phone-content-area.column
+    position: static
+    display: inline-block
+    vertical-align: top
+
+  &:nth-child(2)
+    text-align: right
+    .right-text
+      text-align: left

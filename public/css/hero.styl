@@ -1,0 +1,136 @@
+@keyframes slide
+ 0%
+   background-position-y: 40px
+ 33%
+   background-position-y: 159px
+ 100%
+   background-position-y: 159px
+
+.hero
+  background: black
+  color: white
+  position: fixed
+  width: 100%
+  height: 100%
+  z-index: 1
+  top: 0px
+
+  h1, h2, .heading
+    width: 300px
+
+  h1
+    font-size: 47px
+    line-height: 102%
+
+  h2
+    font-size: 24px
+    margin-top: 19px
+    margin-bottom: 50px
+
+  .heading
+    avant-garde()
+    font-size: 14px
+    margin-bottom: 9px
+
+  .content
+    width: 350px
+    position: absolute
+    right: 0px
+    top: 0px
+    opacity(0)
+    z-index: 8
+    transition(opacity, 0.4s)
+    &.visible
+      opacity(1)
+    @media handheld
+      display: none
+
+  .bordered-input
+    width: 222px
+
+  .apple-copy, .source-link
+    text-align: center
+    font-size: 12px
+    width: 100%
+    position: absolute
+    bottom: 5px
+    color: #AAA
+    padding: 0px 20px
+    margin: 0px auto
+    box-sizing: border-box
+    opacity(0)
+    transition(opacity, 0.4s)
+    &.active
+      opacity(1)
+
+  .source-link
+    right: 5px
+    width: auto
+    text-align: right
+    text-decoration: none
+
+  .arrow
+    background: linear-gradient(bottom, rgba(0,0,0,0.8) 0%, transparent 33%, rgba(0,0,0,0.8) 66%, rgba(0,0,0,0.8) 100%)
+    width: 100%
+    height: 80px
+    cursor: pointer
+    background-position-y: 40px
+    background-size: 100% 150%
+    animation: slide 2.8s linear infinite
+    margin: 0px auto
+
+  .arrow-container
+    position: absolute
+    bottom: 5.5%
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url('/images/down_arrow.png') !important
+    width: 40px
+    height: 40px
+    z-index: 15
+    cursor: pointer
+    text-align: center
+    opacity(0)
+    transition(opacity, 0.2s)
+    &.active
+      opacity(1)
+      &:hover
+        opacity(0.7)
+        .arrow
+          background: transparent !important
+
+  .share
+    avant-garde()
+    margin-top: 120px
+    font-size: 14px
+
+    .facebook-icon, .twitter-icon
+      background-size contain
+      background-repeat no-repeat
+      background-position left center
+      height: 20px
+      width: 20px
+      display: inline-block
+      margin-left: 16px
+      padding-left: 30px
+      width: 0px
+      cursor: pointer
+      transition: opacity 0.4s
+      opacity(1)
+      vertical-align: top
+      &:hover
+        opacity(0.7)
+
+    .facebook-icon
+      background-image url('/images/icon_facebook_white.png') !important
+
+    .twitter-icon
+      background-image url('/images/icon_twitter_white.png') !important
+      margin-left: 12px
+
+  &.bottom-mode
+    .arrow-container, .arrow-container.active
+      display: none !important
+    .apple-copy, .source-link
+      opacity(1) !important

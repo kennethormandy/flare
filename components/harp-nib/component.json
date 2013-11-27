@@ -1,0 +1,42 @@
+{
+  "name": "nib",
+  "repo": "harp/nib",
+  "description": "For Harp. Nib is a small and powerful library for the Stylus CSS language, providing robust cross-browser CSS3 mixins.",
+  "version": "1.0.1",
+  "keywords": [
+    "harp",
+    "stylus",
+    "nib"
+  ],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "files": [
+    "fonts/index.styl",
+    "styl/_border.styl",
+    "styl/_clearfix.styl",
+    "styl/_color-image.styl",
+    "styl/_config.styl",
+    "styl/_flex.styl",
+    "styl/_gradients.styl",
+    "styl/_iconic.styl",
+    "styl/_image.styl",
+    "styl/_overflow.styl",
+    "styl/_positions.styl",
+    "styl/_reset.styl",
+    "styl/_size.styl",
+    "styl/_vendor.styl",
+    "styl/index.styl",
+    "styl/text/_aliases.styl",
+    "styl/text/_ellipsis.styl",
+    "styl/text/_hide-text.styl",
+    "styl/text/_replace-text.styl",
+    "styl/text/index.styl"
+  ],
+  "fonts": [
+    "fonts/iconic_stroke.eot",
+    "fonts/iconic_stroke.otf",
+    "fonts/iconic_stroke.svg",
+    "fonts/iconic_stroke.ttf"
+  ]
+}

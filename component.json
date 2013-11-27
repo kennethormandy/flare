@@ -1,0 +1,10 @@
+{
+  "name": "hb-flare",
+  "repo": "kennethormandy/hb-flare",
+  "description": "A Harp boilerplate version of Artsy’s iPhone splash page.",
+  "version": "0.0.0",
+  "dependencies": {
+    "harp/nib": "1.1.0"
+  },
+  "license": "MIT"
+}

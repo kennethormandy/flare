@@ -1,0 +1,16 @@
+{
+  "domains": [],
+  "globals": {
+    "name": "hb-flare",
+    "MIXPANEL_ID": null,
+    "GOOGLE_ANALYTICS_ID": null,
+    "IPHONE_APP_URL": "https://itunes.apple.com/us/app/artsy-art-world-in-your-pocket/id703796080?ls=1&mt=8",
+    "TWILIO_NUMBER": null,
+    "TWILIO_ACCOUNT_SID": null,
+    "TWILIO_AUTH_TOKEN": null,
+    "SOURCE_URL": "https://github.com/kennethormandy/hb-flare",
+    "CANONICAL_URL": "http://iphone.artsy.net",
+    "HOME_URL": "http://artsy.net",
+    "HOME_HOSTNAME": "artsy.net"
+  }
+}

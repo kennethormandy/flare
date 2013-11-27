@@ -1,0 +1,56 @@
+//
+// Common styles used for initial page rendering throughout the project.
+//
+// Be VERY picky about what is allowed to be put in this file because any style
+// that isn't used throughout most pages will unecessarily slow down initial page load.
+//
+// Examples of styles that belong here are global default styles or CSS reset-like styles
+// such as `box-sizing: border-box` on all elements, or removing outlines on all inputs,
+// ensuring links aren't purple or blue by default, etc. Things that are more stylistic
+// even if they seem to apply to all elements, such as buttons being flat with avant garde,
+// should not go here and instead applied as classes in a componenents stylesheet. It's
+// much easier to add a class to an unstyled default element than it is to untangle too
+// many default CSS styles.
+//
+
+@import 'mixins'
+@import 'headers'
+@import 'buttons'
+@import 'inputs'
+@import 'hero'
+// @import 'iphone'
+
+global-reset()
+
+// General tag styles
+html, body
+  serif()
+  font-size default-font-size
+  line-height 1.4em
+  text-rendering optimizeLegibility
+  background: black
+  @media tablet
+    width: 100%
+    -webkit-text-size-adjust: none
+    zoom: 100%
+    min-width: 1024px
+  @media handheld
+    height: 100%
+    width: 100%
+    -webkit-text-size-adjust: none
+    -webkit-overflow-scrolling: touch
+    min-width: 480px
+    min-height: 1024px
+
+a
+  color black
+
+b, strong
+  font-weight bold
+
+em
+  font-style italic
+
+// List any data-uri embedded assets needed for initial page load here so they
+// are only embedded once.
+font-face('AvantGardeGothicITCW01D 731075', 'c18aee57-7585-4a8b-9a1c-69d226301d73')

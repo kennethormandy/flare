@@ -1,0 +1,107 @@
+#iphone
+  position: fixed
+  width: 100%
+  overflow: hidden
+  text-align: center
+  z-index: 11
+  max-height: 807px
+  height: 84%
+  transition: opacity 0.8s
+  opacity(0)
+  &.visible
+    opacity(1)
+
+  .phone
+    background-repeat: no-repeat
+    background-position: center center
+    background-image url('/images/phone.png') !important
+    background-size: auto 100%
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: 100
+
+  .black-background
+    width: 87%
+    height: 79%
+    position: absolute
+    top: 10%
+    left: 8%
+    z-index: 5
+    background: #000
+
+  .iphone-content
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 100%
+    position: absolute
+    margin-left: 1px
+
+  .phone-content-area
+    position: absolute
+    overflow: hidden
+    top: 0px
+    left: 0px
+    width: 100%
+    height: 100%
+    z-index: 10
+    .black-background
+      display: none
+      height: 100%
+      top: 0px
+    &.active
+      .black-background
+        display: block
+      .content-padder
+        opacity(1)
+
+  .splash-image
+    width: auto
+    height: 100%
+    opacity(0)
+    position: absolute
+    top: 0px
+    left: 0px
+    z-index: 5
+    margin: 0px auto
+    background: black
+    &.active
+      opacity(1)
+
+  .splash-images.phone-content-area
+    text-align: center
+    .splash-image
+      transition: opacity 0.4s
+
+  .browse-content-area,.explore-content-area, .collect-content-area
+    &.active
+      .splash-image
+        opacity(1)
+
+  .content-padder
+    position: absolute
+    height: 100%
+    width: 100%
+    opacity(0)
+    z-index: 10
+    img
+      display: none
+      height: 100%
+      width: auto
+
+  .browse-black-background
+    z-index: 5
+  .explore-black-background
+    z-index: 6
+  .collect-black-background
+    z-index: 7
+
+  .browse-placeholder
+    z-index: 6
+  .explore-placeholder
+    z-index: 7
+  .collect-placeholder
+    z-index: 8

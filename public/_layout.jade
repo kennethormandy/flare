@@ -1,0 +1,44 @@
+doctype
+html(class=htmlClass)
+  head
+    title Download the New Artsy iPhone App
+    meta(name="og:title" content="Download the New Artsy iPhone App")
+    meta(name="description" content="The art world in your pocket. Explore current shows and fairs, discover 60,000 artworks connected by The Art Genome Project, and collect your favorites.")
+    meta(name="og:description" content="The art world in your pocket. Explore current shows and fairs, discover 60,000 artworks connected by The Art Genome Project, and collect your favorites.")
+    meta(name="twitter:description" content="The art world in your pocket. Explore current shows and fairs, discover 60,000 artworks connected by The Art Genome Project, and collect your favorites.")
+
+    meta(content=('/assets/og_image.png') property="og:image")
+    meta(content="website" property="og:type")
+    meta(content="summary" property="twitter:card")
+    meta(content="#{ name }" property="og:site_name")
+    meta(content="20317" property="fb:admins")
+    meta(content=('@' + name) property="twitter:site")
+    meta(content="#{ name }" name="author")
+    meta(content="Copyright &copy; 2013, #{ name }, All Rights Reserved." name="copyright")
+
+    meta(name="viewport", content="width=device-width, maximum-scale=1.0, user-scalable=1.0")
+    link(type="text/css", rel="stylesheet", href="/css/index.css")
+    link(rel="icon", type="image/x-icon", href=('favicon.ico'))
+  body
+    != partial("_shared/hero")
+    != partial("_shared/header")
+    != partial("_shared/iphone")
+    #content
+      != yield
+    .bottom-anchor
+    #scripts
+      //- Bring back TypeKit, Fonts.com, Google Fonts
+
+      //- Mixpanel & Google analytics script
+      //- if environment === 'production'
+      != partial("_shared/mixpanel")
+      != partial("_shared/ga")
+
+      script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js")
+      script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.string/2.3.3/underscore.string.min.js")
+      script(src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.0/backbone-min.js")
+      //- script(src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js")
+      script(src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js")
+      script(src="/js/jquery.poplockit.js")
+      script(src="/js/index.js")
+      block scripts
